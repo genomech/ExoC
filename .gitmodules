@@ -1,6 +1,6 @@
 [submodule "Inversion_search"]
 	path = Inversion_search
 	url = https://github.com/polyaB/Inversion_search
-[submodule "ExoC-translocation-founder"]
-	path = ExoC-translocation-founder
-	url = https://github.com/TimaLagunov/ExoC-translocation-founder.git
+[submodule "ExoC-translocation-finder"]
+	path = ExoC-translocation-finder
+	url = https://github.com/TimaLagunov/ExoC-translocation-finder.git
