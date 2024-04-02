@@ -8,3 +8,4 @@
 cooler cload pairs -c1 1 -p1 2 -c2 3 -p2 4 /path_to_hg19.chromsizes:1000 /path_to_pairs_file sample_name_1Kb.cool
 cooler zoomify  -r 1000,10000,16000,100000,250000,256000,1000000,4096000 -o sample_name.mcool sample_name_1Kb.cool
 ```
+For both pipelines We used file with chromosome sizes for hg19 genome assembly from ucsc https://hgdownload.cse.ucsc.edu/goldenpath/hg19/bigZips/hg19.chrom.sizes. We recommend using this file with chromosome sizes if you are going to use our control mcool files to avoid problems with number of bins in cool files. 
