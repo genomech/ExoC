@@ -5,7 +5,7 @@
 
   Each pipeline starts with .mcool file. We suggest creating a file with resolutions suitable for both pipelines. "ExoC-translocation-finder" pipeline uses resolutions: 1 kb, 16 kb, 256 kb, 4096 kb. "Inversion_search" pipeline uses resolutions: 10 kb, 100 kb, 250 kb, 1000 Kb. You can create .cool file using 1 kb resolution and then execute a `cooler zoomify` command with appropriate resolutions:
   ```
-cooler cload pairs -c1 1 -p1 2 -c2 3 -p2 4 /path_to_hg19.chromsizes:1000 /path_to_pairs_file sample_name_1Kb.cool
+cooler cload pairs -c1 1 -p1 2 -c2 3 -p2 4 /path_to_hg38.chromsizes:1000 /path_to_pairs_file sample_name_1Kb.cool
 cooler zoomify  -r 1000,10000,16000,100000,250000,256000,1000000,4096000 -o sample_name.mcool sample_name_1Kb.cool
 ```
-For both pipelines We used file with chromosome sizes for hg19 genome assembly from ucsc https://hgdownload.cse.ucsc.edu/goldenpath/hg19/bigZips/hg19.chrom.sizes. We recommend using this file with chromosome sizes if you are going to use our control mcool files to avoid problems with number of bins in cool files. 
+For both pipelines We used file with chromosome sizes for hg38 genome assembly from ucsc https://hgdownload.cse.ucsc.edu/goldenpath/hg38/bigZips/hg38.chrom.sizes We recommend using this file with chromosome sizes if you are going to use our control mcool files to avoid problems with number of bins in cool files. 
